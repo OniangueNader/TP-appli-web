@@ -6,61 +6,147 @@
         <title>TP1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
 
     </head>
     <body>
-        <h2>Experiences</h2>
-        <h1>aaaaa</h1>
-        <table width="100%" border="1">  
-            <tr>
-                <td>02/2020-08/2020</td>
-                <td>Consultant en logiciels embarqués
-                    automobiles</td>
-                <td>Elco Solutions</td>
-            </tr>
-            <tr>
-                <td>04/2019-10/2019</td>
-                <td>Stagiaire en Instrumentation de systèmes
-                    embarqués</td>
-                <td>COSE Technology</td>
-            </tr>
-            <tr>
-                <td>06/2018 - 07/2018</td>
-                <td>Stagiaire ingénieur en développement de
-                    logiciels embarqués</td>
-                <td>Mentor Graphics</td>
-            </tr>
-        </table>
-        
-        <h2>Formations</h2>
-        <table width="100%" border="1"> 
-            <tr>
-                <td>09/2020 - Present</td>
-                <td>Ingénierie des images et Réseaux (Parcours Images)</td>
-                <td>Université Sorbonne Paris Nord (USPN)</td>
-            </tr>
-            <tr>
-                <td>09/2014 - 09/2019</td>
-                <td>Instrumentation et Maintenance Industrielle</td>
-                <td>Institut Nationale des Sciences Appliquées et
-                    de Technologie (INSAT)</td>
-            </tr>
-        </table>
-        
-        <h2>Skills</h2>
-        <table width="100%" border="1">  ... </table>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="margin-bottom: 10px;">
+            <button class="btn btn-light btn-rounded waves-effect shadow" disabled>
+                <a class="navbar-brand " href="#">Home</a>
+            </button>   
+            <button class="btn btn-light btn-rounded waves-effect shadow">
+                <a class="navbar-brand" href="experience.html">Experiences</a>
+            </button>
+            <button class="btn btn-light btn-rounded waves-effect shadow">
+                <a class="navbar-brand" href="formation.html">Formations</a>
+            </button>
+        </nav>
+        <div class="container-fluid" id="body">
+                <img src="Nader_pic.JPG" 
+                class= "img-fluid rounded-circle img-thumbnail float-left" 
+                alt="zoom" id="imgNader">
+                <p class="bold">Nader Oniangue</p>
+                <p class="semibold">Ingénieur en dévéloppement de système embarqués</p>
+                <p>ingénieur diplômé en instrumentation et maintenance industrielle, je me spécialise en conception
+                électronique et développement des systèmes embarqués. J'ai une bonne maîtrise des langages de
+                programmation C/C++ et de l’expérience avec les outils de CAO (notamment : Altium Designer et Eagle
+                CAD).</p>
+            <br>
+            <table width ="100%" class="table table-hover shadow p-3 mb-5 bg-white rounded">
+                <thead class="thead-dark">
+                    <tr>
+                        <td><img src="mail.svg">  oniangue.nader@gmail.com</td>
+                        <td><img src="phone.svg">(+33)0758076284</td>
+                        <td><img src="location.svg">  Poissy, France</td>
+                        <td><img src="globe.svg">  <a href="https://www.linkedin.com/in/naderoniangue/">linkedin.com/in/naderoniangue</a></td>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <br>
+            <img src="check-circle-fill.svg" class="float-left">
+            <a href="experience.html"><h2>Experiences</h2></a>
+            <table class="table table-hover shadow p-3 mb-5 bg-white rounded marginClass" width="100%" border="1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Poste</th>
+                        <th scope="col">Entreprise</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <tr>
+                        <td>02/2020 - 08/2020</td>
+                        <td>Consultant en logiciels embarqués
+                            automobiles</td>
+                        <td>Elco Solutions<a href="https://www.elco-solutions.de/">
+                            <img class="company float-right" src="Elco.png" 
+                            style="margin-left: 10px; width: 40px; height: 30px;"></td></a>
+                    </tr>
+                    <tr>
+                        <td>04/2019 - 10/2019</td>
+                        <td>Stagiaire en Instrumentation de systèmes
+                            embarqués</td>
+                        <td>COSE Technology
+                            <a href="https://www.cose.fr/en/home/"><img class="company float-right" src="cose.png" 
+                            style="margin-left:10px; width: 40px; height: 30px;"></td></a>
+                    </tr>
+                    <tr>
+                        <td>06/2018 - 07/2018</td>
+                        <td>Stagiaire ingénieur en développement de logiciels embarqués</td>
+                        <td>Mentor Graphics <a href="https://www.mentor.com/"><img class="company float-right" src="mentor.png" 
+                            style="margin-left: 10px; width: 40px; height: 40px;"></td></a>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <img src="check-circle-fill.svg" class="float-left">
+            <a href="formation.html"><h2>Formations</h2></a>
+            <table class="table table-hover shadow p-3 mb-5 bg-white rounded" width="100%" border="1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Date</th>
+                        <th scope="col">Formation</th>
+                        <th scope="col">Etablissement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09/2020 - Present</td>
+                        <td>Ingénierie des images et Réseaux (Parcours Images)</td>
+                        <td>Université Sorbonne Paris Nord (USPN)</td>
+                    </tr>
+                    <tr>
+                        <td>09/2014 - 09/2019</td>
+                        <td>Instrumentation et Maintenance Industrielle</td>
+                        <td>Institut Nationale des Sciences Appliquées et
+                            de Technologie (INSAT)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div>
+            <img src="check-circle-fill.svg" class="float-left"><h2>Skills</h2>
+           
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>C/C++</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>Embedded C</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>OpenCV</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>TensorFlow</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>Python</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>Deep Learning</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>NVIDIA</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>LINUX</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>Raspbian</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>Altium Designer</h5></div>
+                <div  class="d-inline-flex badge badge-dark shadow " id = "skills"><h5>AUTOSAR</h5></div>
+            <div class="CV_Interest">
+                <br>
+                <img src="check-circle-fill.svg" class="float-left"><h2>Centre d'intêrets</h2>
+                <br>
+                <ul class="list">
+                    <li class="element">
+                        <img src="meditation.svg" alt="meditation"> <p class="hobby">Meditation </p>
+                    </li>
+                    <li class="element">
+                        <img src="photography.svg" alt="photographie"><p class="hobby">photographie </p>
+                    </li>
+                    <li class="element">
+                        <img src="volleybal.svg" alt="volleyball"><p class="hobby">Volleyball</p>
+                    </li>
+                    <li class="element">
+                        <img src="traveling.svg" alt="Voyages"><p class="hobby">Voyages </p>
+                    </li>
+                    <li class="element">
+                        <img src="gaming.svg" alt="Jeux Videos"><p class="hobby">gaming</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>

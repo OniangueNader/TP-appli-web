@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@media only screen and (max-width: 2000px) {
+    body {
+        background-color: white;
+    }
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+body{
+
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    max-width: 100%; 
+    padding-top: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(185,185,236,1) 0%, rgba(0,212,255,1) 100%);             
+}
+.bold{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.semibold{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.company:hover{
+    transform: scale(1.5);
+}
+img#imgNader{
+    width: 15%;
+    height: 15%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+div#body{
+    max-height: 100%;
+    background-image: ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+span#skills {
+    text-align: center;
+}
+
+.d-inline-flex{
+    margin-bottom: 10px;
+}
+.waves-effect{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button:disabled {
+    opacity: 0.1;
+    background-color: sienna;
+}
+.list{
+    display : flex;
+    justify-content: space-between;
+}
+.element{
+    width: 60px;
+    height: 60px;
+    border: 2px solid snow;
+    border-radius: 50%;
+    position: relative;
+    color: snow;
+}
+.element img{
+    font-size: 40px;
+    transform: translate(60%,60%);
+}
+.element img:hover{
+    opacity:0.5;
+    transform : scale(1.2);
+}
+.hobby{
+    transform: translate(-10px,30px);
+}
+
