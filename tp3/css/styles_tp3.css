@@ -1,0 +1,80 @@
+label{
+    width: 300px;
+    display: inline-block;
+}
+
+body {
+    margin: auto;
+}
+
+.card-header{
+    margin-top: 30px;
+    color:snow
+}
+p#form_title{
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+
+#error {
+    background-color: red;
+}
+
+#resultat {
+    background-color: darkgreen;
+}
+.btn-dark {
+    margin-top: 5px;
+}
+.modalBox{
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    visibility: hidden;
+    transform : translate(-50%,-50%);
+    transition :200ms ease-in-out;
+    border : 1px solid black;
+    border-radius : 10px;
+    background-color: white;
+    width: 500px;
+    max-width: 50%;
+    /*opacity: 0;*/
+}
+.modalBox.active{
+    visibility: visible;
+}
+
+.modal-header {
+    padding : 10px 15px;
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+    border-bottom: solid black;
+}
+
+.modal-header .title{
+    font-weight: bold;
+}
+
+.modal-header .close-button{
+    font-weight: bold;
+}
+.modal-body{
+    padding : 10px 15px;
+}
+#overlay{
+    position : fixed;
+    top :0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+    transition : 200ms ease-in-out;
+    visibility :hidden;
+}
+#overlay.active{
+    pointer-events: all;
+    visibility: visible;
+}
