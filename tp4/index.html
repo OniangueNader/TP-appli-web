@@ -16,6 +16,22 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/form-jquery-validation.js"></script>
+    
+    <script>
+        function countChar1(val) {
+            $('#name').keyup(function () {
+                var len = $(this).val().length;
+                $('#charNum1').html(len + ' car.');
+            });
+        };
+        function countChar2(val) {
+            $('#firstname').keyup(function () {
+                var len = $(this).val().length;
+                $('#charNum2').html(len + ' car.');
+            });
+        };
+    </script>
+  
 
 </head>
 
@@ -30,9 +46,9 @@
                     <label for="name">Nom</label>
                 </div>
                 <div class="form-group col">
-                    <input type="text" class="form-control" placeholder="" id="name">
+                    <input type="text" class="form-control" placeholder="" id="name" onkeyup="countChar1(this)">
                 </div>
-                <div class="form-group col-1">
+                <div class="form-group col-1" id="charNum1">
                     0 car.
                 </div>
             </div>
@@ -41,9 +57,9 @@
                     <label for="firstname">Prénom</label>
                 </div>
                 <div class="form-group col">
-                    <input type="text" class="form-control" placeholder="" id="firstname">
+                    <input type="text" class="form-control" placeholder="" id="firstname" onkeyup="countChar2(this)">
                 </div>
-                <div class="form-group col-1">
+                <div class="form-group col-1" id="charNum2">
                     0 car.
                 </div>
             </div>
